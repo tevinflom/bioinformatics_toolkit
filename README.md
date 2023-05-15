@@ -1,2 +1,2 @@
-# bioinformatics_toolkit
-I'm currently learning bioinformatics via UCSD and Coursera. This repo is my toolkit I am developing for myself as I learn. It is comprised mostly of small Python scripts and class files to be used in future genomic data science and bioinformatics applications. 
+# Bioinformatics Toolkit
+I am currently working on my bioinformatics specialization through UCSD and Coursera. This repo is a toolkit I am developing for myself as I learn. It is composed mostly of small Python scripts and class files to be used in future genomic data science and bioinformatics projects. Very excited to keep learning and growing in this wonderful field!

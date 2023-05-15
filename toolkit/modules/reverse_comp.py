@@ -12,7 +12,7 @@ class ReverseCompliment():
 
         base_pair_convert = dna.replace("A", "t").replace("T", "a").replace("G", "c").replace("C", "g")
         base_pair_convert = base_pair_convert.upper() 
-        reverse_comp = base_pair_convert[::1]
+        reverse_comp = base_pair_convert[::-1]
         print(reverse_comp)
         return(reverse_comp)
       
@@ -21,4 +21,4 @@ class ReverseCompliment():
 
                 
         
-    test = reverse_comp(dna = "AAATTTGGGCCCATGCATGC")
+    test = reverse_comp(dna = "CCAGATC")

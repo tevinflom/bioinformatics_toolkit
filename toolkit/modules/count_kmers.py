@@ -21,7 +21,7 @@ class CountKmers():
         print(count) 
         return(count)
     
-    test = pattern_count("atgatgatg", "atg")
+    test = pattern_count("GACCATCAAAACTGATAAACTACTTAAAAATCAGT", "AAA")
 
 
 

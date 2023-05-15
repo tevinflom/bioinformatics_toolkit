@@ -7,7 +7,7 @@ class CountKmers():
         ''' 
         This method gives every position of a given pattern in a DNA string.
         Args: (str) dna - DNA sequence, (str) pattern - kmer
-        Returns: (list) positions - positions of the occurances in the DNA string
+        Returns: (str) positions - positions of the occurances in the DNA string
         '''
         positions = []
         start_pos = 0 
@@ -24,7 +24,7 @@ class CountKmers():
         print(str_positions) 
         return(str_positions)
     
-    test = pattern_positions("GATATATGCATATACTT", "TATA")
+    test = pattern_positions("AAACATAGGATCAAC", "AA")
 
 
 

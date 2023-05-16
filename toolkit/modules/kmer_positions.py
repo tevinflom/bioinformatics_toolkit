@@ -1,4 +1,4 @@
-class CountKmers(): 
+class KmerPositions(): 
     def __init__(self): 
         ## MODULAR, use-case specific ##
         pass

@@ -5,7 +5,7 @@ class ReverseCompliment():
         pass
     def reverse_comp(dna):
         '''
-        This function gives the reverse compliment of a DNA string. It is based on the logic of replication, so it is naive.
+        This function gives the reverse compliment of a DNA string. It is based on the logic of replication, so it's naive.
         Args: (str) DNA - DNA string
         Returns: (str) reverse_compliment - reverse compliment of the DNA string
         '''

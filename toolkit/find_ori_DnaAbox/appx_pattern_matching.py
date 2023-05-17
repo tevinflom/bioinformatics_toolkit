@@ -22,7 +22,8 @@ class ApproximatePatternMatching():
                     new_pos = pos
                     positions.append(new_pos)
         count = len(positions)
-        print(*positions, f'Count: {count}')
-        return positions, count
+        #print(*positions, f'Count: {count}')
+        print(count)
+        return count
 
     test = appxmatch(pattern = 'AAAAA', dna = 'AACAAGCTGATAAACATTTAAAGAG,', d = 2)

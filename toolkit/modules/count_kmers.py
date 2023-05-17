@@ -19,9 +19,9 @@ class CountKmers():
             else: 
                 break 
         print(count) 
-        return(count)
+        return count
     
-    test = pattern_count("GACCATCAAAACTGATAAACTACTTAAAAATCAGT", "AAA")
+    #test = pattern_count("GACCATCAAAACTGATAAACTACTTAAAAATCAGT", "AAA")
 
 
 

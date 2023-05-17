@@ -24,7 +24,7 @@ class KmerPositions():
         print(str_positions) 
         return(str_positions)
     
-    test = pattern_positions("AAACATAGGATCAAC", "AA")
+    #test = pattern_positions("AAACATAGGATCAAC", "AA")
 
 
 

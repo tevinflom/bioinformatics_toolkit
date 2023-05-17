@@ -17,6 +17,8 @@ class FindKmers():
             count = pd.Series(substrings).value_counts()
         print("Kmer | Count")
         print(count)
+        print("----------")
+        print(f"Kmers: {substrings}")
         return count
 
     test = frequent_words(dna = "TAAACGTGAGAGAAACGTGCTGATTACACTTGTTCGTGTGGTAT", k = 3)

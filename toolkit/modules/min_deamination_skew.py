@@ -10,7 +10,8 @@ class DeaminationSkew():
         Args: (str) genome - single stranded DNA, reverse strand
         Returns: (str) skew - str from list of skew values for each nucleotide in genome
                  (list) int values of substring lengths i that minimize int value of skew
-        '''
+                
+        ''' 
         skew = [0]
         skew_val = 0
         nucleotides = ["G", "C", "A", "T"]
@@ -27,7 +28,6 @@ class DeaminationSkew():
         print([int(nucleotide) for nucleotide, pos in enumerate(skew) if pos == min(skew)])
         return skew and [int(nucleotide) for nucleotide, pos in enumerate(skew) if pos == min(skew)]
     test = skew(genome = "TAAAGACTGCCGAGAGGCCAACACGAGTGCTAGAACGAGGGGCGTAAACGCGGGTCCGAT")
-
 
 
 

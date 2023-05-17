@@ -21,4 +21,4 @@ class ReverseCompliment():
 
                 
         
-    test = reverse_comp(dna = "CCAGATC")
+    #test = reverse_comp(dna = "CCAGATC")

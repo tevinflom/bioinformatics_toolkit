@@ -21,7 +21,7 @@ class KmerPositions():
             else: 
                 break 
         
-        print(str_positions) 
+        #print(str_positions) 
         return(str_positions)
     
     #test = pattern_positions("AAACATAGGATCAAC", "AA")

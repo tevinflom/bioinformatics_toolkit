@@ -25,4 +25,4 @@ def approx(dna, k, d):
         #print (freq_kmers[max(freq_kmers)])            
         return freq_kmers[max(freq_kmers)]
 
-test = approx(dna = 'ACGTTGCATGTCGCATGATGCATGAGAGCT', k = 5, d = 3)
+#test = approx(dna = 'ACGTTGCATGTCGCATGATGCATGAGAGCT', k = 5, d = 3)

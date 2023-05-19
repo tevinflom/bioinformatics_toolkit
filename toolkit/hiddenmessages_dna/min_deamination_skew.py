@@ -25,9 +25,9 @@ class DeaminationSkew():
             skew.append(skew_val)
         
         print(*skew)
-        print([int(nucleotide) for nucleotide, pos in enumerate(skew) if pos == min(skew)])
+        print([int(nucleotide) for nucleotide, pos in enumerate(skew) if pos == max(skew)])
         return skew and [int(nucleotide) for nucleotide, pos in enumerate(skew) if pos == min(skew)]
-    test = skew(genome = "TAAAGACTGCCGAGAGGCCAACACGAGTGCTAGAACGAGGGGCGTAAACGCGGGTCCGAT")
+    test = skew(genome = 'GCATACACTTCCCAGTAGGTACTG')
 
 
 

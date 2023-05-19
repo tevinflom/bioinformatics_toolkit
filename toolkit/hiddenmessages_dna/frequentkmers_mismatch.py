@@ -33,8 +33,10 @@ class FrequentKmersMismatches():
             count = ApproximatePatternMatching.appxmatch(pattern, dna, d)
             if count not in freq_kmers:
                 freq_kmers[count] = [pattern]
+                break
             else:
                 freq_kmers[count].append(pattern)
-        print (freq_kmers[max(freq_kmers)])            
-        return freq_kmers[max(freq_kmers)]
+                break
+        print (freq_kmers[min(freq_kmers)])            
+        return freq_kmers[min(freq_kmers)]
     test = approx(dna = "GTGAGAGATTGTGGTGAGTCGTGGATTAGAGATTAGTAGTCGTGAGAGTGGATTCGTGAGACGTGAGAGATTCGTGCGTGCGTGAGAAGAGATTCGTGGATTGATTAGAGTGAGTGATTAGTGTGGATTAGTAGAGTGAGTCGTGGTGGTGGTGGATTGTGAGTCGTGGATTAGTAGTCGTGAGTAGAGATTAGTGTGAGTAGTAGAAGTAGTAGTCGTGAGACGTGAGACGTGCGTGAGAGTGAGAAGTAGTGTGAGTGTGGATTAGAGATTGTGAGTAGAAGTCGTGAGTCGTGAGAAGAGATTAGAAGAGTGAGTAGAAGTCGTGGTGAGTCGTGAGACGTGCGTGCGTGGATTAGTAGTAGA", k = 6, d = 3)

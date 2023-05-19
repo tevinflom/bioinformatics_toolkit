@@ -14,13 +14,14 @@ class FindKmers():
         for pos in range(len(dna) - k + 1):
             kmer = dna[pos:pos+k]
             substrings.append(kmer)
-            count = pd.Series(substrings).value_counts()
-        print("Kmer | Count")
-        print(count)
-        print("----------")
-        print(f"Kmers: {substrings}")
-        return count
+            #count = pd.Series(substrings).value_counts()
+        #print("Kmer | Count")
+        #print(count)
+        #print("----------")
+        #print(f"Kmers: {substrings}")
+        #return count
+        return substrings
 
-    test = frequent_words(dna = "TAAACGTGAGAGAAACGTGCTGATTACACTTGTTCGTGTGGTAT", k = 3)
+    #test = frequent_words(dna = "TAAACGTGAGAGAAACGTGCTGATTACACTTGTTCGTGTGGTAT", k = 3)
     
         

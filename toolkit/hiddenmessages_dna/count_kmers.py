@@ -18,7 +18,7 @@ class CountKmers():
                 count += 1
             else: 
                 break 
-        print(count) 
+        #print(count) 
         return count
     
     #test = pattern_count("GACCATCAAAACTGATAAACTACTTAAAAATCAGT", "AAA")

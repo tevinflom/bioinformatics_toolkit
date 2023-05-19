@@ -15,4 +15,4 @@ class HammingDistance():
                 distance += 1
         #print(distance)
         return distance
-    #test = hamming_2str(seq1 = "GGGCCGTTGGT", seq2 = "GGACCGTTGAC")
+    #test = hamming_2str(seq1 = "CTACAGCAATACGATCATATGCGGATCCGCAGTGGCCGGTAGACACACGT", seq2 = "CTACCCCGCTGCTCAATGACCGGGACTAAAGAGGCGAAGATTATGGTGTG")

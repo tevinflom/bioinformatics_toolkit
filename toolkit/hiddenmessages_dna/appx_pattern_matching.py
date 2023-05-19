@@ -14,7 +14,7 @@ class ApproximatePatternMatching():
         '''
         positions = []
         k = len(pattern)
-        for pos in range(len(dna) - k+1):
+        for pos in range(len(str(dna)) - k+1):
             kmer = dna[pos:pos+k]
             if kmer in dna:
                 hamming_d = hd.hamming_2str(pattern, kmer)
@@ -22,8 +22,8 @@ class ApproximatePatternMatching():
                     new_pos = pos
                     positions.append(new_pos)
         count = len(positions)
-        #print(*positions, f'Count: {count}')
-        print(count)
+        print(*positions, f'Count: {count}')
+        #print(count)
         return count
 
-    test = appxmatch(pattern = 'AAAAA', dna = 'AACAAGCTGATAAACATTTAAAGAG,', d = 2)
+    #test = appxmatch(pattern = 'AA', dna = 'TACGCATTACAAAGCACA', d = 1)s

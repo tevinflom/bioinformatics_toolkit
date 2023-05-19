@@ -7,6 +7,10 @@ Created on Tue Apr 10 17:56:59 2018
 @author: jennifermichaud
 https://github.com/jmmichaud/BioinfoTools/blob/master/BruteMotifEnumeration.py
 
+NOTE_TO_SELF:
+This way of finding motifs is super impractical and computationally expensive (hence why I didnt write this code myself)
+Don't use it in practice, just purely demonstrates how the algorithm works
+- tevinflom 
 """
 
 
@@ -84,6 +88,6 @@ k_in = 5
 d_in = 2
 ##Corr_out = AAGTG GAAGC GTAAA TAAGC GTGAA CAAGC GGTAA AAAGC AGTAA
 #
-print(" ".join(BruteMotifEnumeration(dna_in, k_in, d_in)))
+#print(" ".join(BruteMotifEnumeration(dna_in, k_in, d_in)))
 
             

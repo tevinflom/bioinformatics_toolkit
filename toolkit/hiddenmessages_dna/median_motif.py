@@ -15,6 +15,7 @@ class MedianString():
         with open(dataset_path, 'r') as dataset:
             dna = dataset.readlines()
             possible_kmers = []
+            median = []
             for substring in dna:
                 seq = substring.strip('\n')
                 for i in range(len(seq) - k+1):
@@ -27,8 +28,8 @@ class MedianString():
                     for i in range(len(seq) - k+1):
                         if min_distance > HammingDistance.hamming_2str(kmer, seq[i:i+k]):
                             min_distance = HammingDistance.hamming_2str(kmer, seq[i:i+k])
-                            median = kmer
+                            median.append(kmer)
         print(f'The median motif that minimizes hamming distance among all possible kmers is {median}.')
         return(median)
 
-    test = MedianString(dataset_path = 'dataset.txt', k = 6)
+    test = MedianString(dataset_path = 'dataset.txt', k = 7)

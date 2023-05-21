@@ -3,6 +3,9 @@ class ProfileToConsensus():
         #MODULAR
         pass
     def profile_to_consensus():
+        '''
+        This fcn generates a profile matrix and builds a consensus string. 
+        '''
         seqs = ['ATCCAGCT',
                 'GGGCAACT',
                 'ATGGATCT',
@@ -32,6 +35,7 @@ class ProfileToConsensus():
             result.append(max_nuc)
         consensus_seq = ''.join(result)
         print(consensus_seq)
+        print(profile_matrix)
         return profile_matrix
 
     

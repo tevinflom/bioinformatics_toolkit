@@ -32,8 +32,8 @@ class MotifEntropy():
             for value in vals:
                 if value > 0:
                     total_entropy += abs(value * math.log(value, 2))
-        print(f'The entropies of each motif sequence are {indiv_entropy}.')
-        print(f'The total entropy of the set is {total_entropy}.')
+        #print(f'The entropies of each motif sequence are {indiv_entropy}.')
+        #print(f'The total entropy of the set is {total_entropy}.')
 
         return total_entropy
     test_set = [
@@ -48,4 +48,4 @@ class MotifEntropy():
 "TAGGGGAACTAC",
 "TCGGGTATAACC"
 ]
-    test = Entropy(motif_list = test_set)
+    #test = Entropy(motif_list = test_set)
